@@ -40,7 +40,7 @@ const ContentStudio: React.FC = () => {
     {
       title: "Tech Magazine Coverage",
       type: "Journalism",
-      description: "Covered a portfolio of major companies' news and events for a segment of the enterprise software market.",
+      description: "Covered a portfolio of major companies for a leading publisher of enterprise software news.",
       results: "Boosted media awareness, created brand familiarity in marketplace."
     },
     {

@@ -19,7 +19,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ service }) => {
   const serviceOptions = [
     { value: '', label: 'Select a service...' },
     { value: 'content', label: 'Content Creation Services' },
-    { value: 'ai-consulting', label: 'AI Consulting & Automation' },
+    { value: 'app-development', label: 'App/Website Development Services' },
     { value: 'directory', label: 'Directory Listing' },
     { value: 'partnership', label: 'Partnership Opportunity' },
     { value: 'media', label: 'Media Inquiry' },

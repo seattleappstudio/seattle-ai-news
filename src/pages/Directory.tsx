@@ -18,68 +18,212 @@ const Directory: React.FC = () => {
   const listings: DirectoryListing[] = [
     {
       id: 1,
-      name: "Temporal Technologies",
-      description: "Microservice orchestration platform that simplifies building and operating resilient applications.",
-      category: "startup",
-      website: "https://temporal.io",
+      name: "Avanade AI",
+      description: "Focuses on enterprise AI and cloud consulting services with a focus on Microsoft AI tools and integration strategies.",
+      category: "consultant",
+      website: "https://www.avanade.com/",
       location: "Seattle, WA"
     },
     {
       id: 2,
-      name: "AI Consulting Northwest",
-      description: "Strategic AI implementation and transformation consulting for enterprise clients.",
+      name: "Fresh Consulting",
+      description: "Pursues computing advances to create intelligent machines that complement human reasoning to augment and enrich our experience and competencies..",
       category: "consultant",
-      website: "https://example.com",
+      website: "https://www.freshconsulting.com/",
       location: "Bellevue, WA"
     },
     {
       id: 3,
-      name: "DataRobot",
-      description: "Enterprise AI platform that democratizes data science and accelerates digital transformation.",
-      category: "tool",
-      website: "https://datarobot.com",
+      name: "Scalability",
+      description: "Offers consulting for digital marketing, content strategy, and analytics.",
+      category: "consultant",
+      website: "https://www.scalability.agency/",
       location: "Seattle, WA"
     },
     {
       id: 4,
-      name: "Madrona Venture Group",
-      description: "Venture capital firm investing in early-stage technology companies, including AI startups.",
-      category: "investor",
-      website: "https://madrona.com",
+      name: "Slalom AI",
+      description: "Designs and implements cloud-first AI and automation strategies for enterprise clients across industries.",
+      category: "consultant",
+      website: "https://www.slalom.com/us/en/services/artificial-intelligence",
       location: "Seattle, WA"
     },
     {
       id: 5,
-      name: "University of Washington AI Lab",
-      description: "Leading research in machine learning, natural language processing, and computer vision.",
-      category: "research",
-      website: "https://www.cs.washington.edu/research/ai",
-      location: "Seattle, WA"
+      name: "West Monroe AI Consulting",
+      description: "Helps businesses integrate AI into their operations with a focus on practical outcomes and enterprise readiness.",
+      category: "consultant",
+      website: "https://www.westmonroe.com/offices/seattle",
+      location: "Chicago, IL (office in Seattle, WA)"
     },
     {
       id: 6,
-      name: "Lexmas",
-      description: "AI-powered legal document analysis and contract management platform.",
+      name: "Amperity",
+      description: "Provides AI-powered customer data platforms to unify and analyze enterprise customer data for personalized marketing and insights.",
       category: "startup",
-      website: "https://lexmas.com",
+      website: "https://amperity.com/",
       location: "Kirkland, WA"
     },
     {
       id: 7,
-      name: "Semantic Machines",
-      description: "Conversational AI platform acquired by Microsoft, focusing on natural language understanding.",
+      name: "BirchAI (Sagility Health)",
+      description: "Specializes in automating medical documentation and patient communications.",
       category: "startup",
-      website: "https://www.microsoft.com",
+      website: "https://www.birchai.com/",
       location: "Seattle, WA"
     },
     {
       id: 8,
-      name: "AI Strategy Partners",
-      description: "Management consulting focused on AI strategy, implementation, and organizational transformation.",
-      category: "consultant",
-      website: "https://example.com",
+      name: "Defined.ai",
+      description: "Offers a marketplace for high-quality training data and AI model building, with roots in Portugal and strong operations in Seattle.",
+      category: "startup",
+      website: "https://www.birchai.com/",
       location: "Seattle, WA"
-    }
+    },
+    {
+      id: 9,
+      name: "Enzzo",
+      description: "Operates in the AI-driven hardware development space, providing tools to streamline product design and manufacturing.",
+      category: "tool",
+      website: "https://enzzo.ai/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 10,
+      name: "Evisort",
+      description: "Provides AI-powered contract management and document automation tools for enterprise legal teams. Significant Seattle expansion post-funding.",
+      category: "tool",
+      website: "https://www.evisort.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 11,
+      name: "Falkon AI",
+      description: "Offers an AI-powered sales and marketing analytics platform built by ex-Amazon and Tableau employees. Backed by Madrona Venture Group.",
+      category: "startup",
+      website: "https://www.falkon.ai/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 12,
+      name: "Gradial",
+      description: "Uses generative AI to help businesses maintain up-to-date digital content.",
+      category: "tool",
+      website: "https://www.gradial.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 13,
+      name: "Healionics",
+      description: "Develops artificial blood vessels for dialysis patients.",
+      category: "startup",
+      website: "https://healionics.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 14,
+      name: "Humanly",
+      description: "Provides a conversational AI tool for recruiting and candidate screening.",
+      category: "tool",
+      website: "https://www.humanly.io/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 15,
+      name: "Kaskada (DataStax)",
+      description: "Serves the data science and machine learning industries, helping users create and operate predictive models with event-based data.",
+      category: "startup",
+      website: "https://www.kaskada.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 16,
+      name: "Lexion",
+      description: "Provides AI-powered contract lifecycle management tools.",
+      category: "tool",
+      website: "https://www.lexion.ai/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 17,
+      name: "Mason",
+      description: "Combines IoT and AI to deliver smart device management and provisioning for enterprises. Funded by Coatue and Kleiner Perkins.",
+      category: "startup",
+      website: "https://www.bymason.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 18,
+      name: "Oleria",
+      description: "Offers adaptive AI-driven cybersecurity platforms. Founded by former AWS security leaders, backed by Salesforce Ventures.",
+      category: "startup",
+      website: "https://www.oleria.com/",
+      location: "Bellevue, WA"
+    },
+    {
+      id: 19,
+      name: "PreemptiveAI",
+      description: "Offers real-time diagnostic solutions powered by AI.",
+      category: "startup",
+      website: "https://www.preemptiveai.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 20,
+      name: "Protect AI (Palo Alto Networks)",
+      description: "Helps companies monitor and protect AI systems from cyberattacks.",
+      category: "startup",
+      website: "https://protectai.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 21,
+      name: "Pulumi",
+      description: "Integrates AI to assist developers with automated code generation and ops insights.",
+      category: "startup",
+      website: "https://www.pulumi.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 22,
+      name: "Read AI",
+      description: "Specializes in enhancing virtual meetings through its AI-powered tools.",
+      category: "tool",
+      website: "https://www.read.ai/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 23,
+      name: "Runway AI",
+      description: "Offers generative video tools using AI, with a satellite office in Seattle supporting core product development.",
+      category: "tool",
+      website: "https://runwayml.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 24,
+      name: "Sanctuary AI",
+      description: "specializing in general-purpose humanoid robots powered by advanced AI. Maintains a Seattle tech office for U.S. expansion.",
+      category: "startup",
+      website: "https://www.sanctuary.ai/",
+      location: "Vancouver, BC"
+    },
+    {
+      id: 25,
+      name: "SeekOut",
+      description: "Provides AI talent intelligence platform founded by ex-Microsoft engineers.",
+      category: "tool",
+      website: "https://www.seekout.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 26,
+      name: "WellSaid Labs",
+      description: "Offers an AI-powered voice generation platform.",
+      category: "tool",
+      website: "https://www.wellsaidlabs.com/",
+      location: "Seattle, WA"
+    },
   ];
 
   const categories = [

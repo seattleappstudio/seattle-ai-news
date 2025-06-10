@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
               <span className="text-xl font-bold">Seattle AI News</span>
             </Link>
             <p className="text-gray-400 text-sm">
-              Connecting the Pacific Northwest's AI ecosystem through directory, content, and consulting services.
+              Connecting the Pacific Northwest's AI ecosystem through news, directory, and content creation services.
             </p>
           </div>
 
@@ -22,6 +22,9 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <nav className="space-y-2">
+              <Link to="https://seattleainews.substack.com/" className="block text-gray-400 hover:text-white transition-colors">
+                AI News
+              </Link>
               <Link to="/directory" className="block text-gray-400 hover:text-white transition-colors">
                 AI Directory
               </Link>
