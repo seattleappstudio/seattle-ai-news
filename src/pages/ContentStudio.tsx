@@ -18,9 +18,9 @@ const ContentStudio: React.FC = () => {
     },
     {
       icon: PenTool,
-      title: "Ghostwriting & Thought Leadership",
-      description: "Executive bylines and thought leadership content that builds personal and company brand authority.",
-      features: ["Executive bylines", "LinkedIn articles", "Speaking abstracts", "Media interviews"]
+      title: "Technical Documentation",
+      description: "Clear, structured, and developer-friendly content that empowers users and showcases your platform's capabilities.",
+      features: ["API reference documentation", "Developer tutorials & walkthroughs", "How-to guides & quickstarts", "Technical editing"]
     },
     {
       icon: Megaphone,
@@ -32,22 +32,22 @@ const ContentStudio: React.FC = () => {
 
   const portfolio = [
     {
-      title: "AI Startup Case Study",
-      type: "Case Study",
-      description: "Documented 300% growth in customer acquisition for Seattle-based AI startup through strategic content marketing.",
-      results: "3x customer growth, 50% increase in qualified leads"
+      title: "Developer Portal",
+      type: "Developer Docs",
+      description: "Led technical writing of developer-focused documentation for a leading IT observability company.",
+      results: "Overhauled and integrated docs into a new developer portal."
     },
     {
-      title: "Enterprise AI Whitepaper",
-      type: "Whitepaper",
-      description: "Technical deep-dive on implementing AI in enterprise environments, generating 500+ qualified leads.",
-      results: "500+ leads, 25% conversion to sales qualified opportunities"
+      title: "Tech Magazine Coverage",
+      type: "Journalism",
+      description: "Covered a portfolio of major companies' news and events for a segment of the enterprise software market.",
+      results: "Boosted media awareness, created brand familiarity in marketplace."
     },
     {
-      title: "Executive Thought Leadership",
-      type: "Byline Series",
-      description: "Monthly byline series for AI executive, establishing thought leadership in conversational AI space.",
-      results: "Published in 3 major publications, 15K+ social media reach"
+      title: "Tech Blog Content",
+      type: "Blogs",
+      description: "Wrote initial slate of blog posts for an innovative product of a major software company.",
+      results: "Seeded a v1.0 product with content and set tone and style for ongoing publication."
     }
   ];
 
