@@ -6,7 +6,7 @@ const About: React.FC = () => {
     {
       icon: Users,
       title: "Community First",
-      description: "We believe in the power of connecting people and fostering collaboration within Seattle's AI ecosystem."
+      description: "We believe in the power of connecting people and fostering collaboration within the Pacific Northwest's AI ecosystem."
     },
     {
       icon: Target,
@@ -16,7 +16,7 @@ const About: React.FC = () => {
     {
       icon: Award,
       title: "Quality Over Quantity",
-      description: "We prioritize deep, valuable content and meaningful connections over volume and surface-level coverage."
+      description: "We prioritize deep, valuable content and clear technical documentation over marketing hype."
     }
   ];
 
@@ -84,7 +84,7 @@ const About: React.FC = () => {
                   <div className="w-48 h-48 mx-auto mb-6 overflow-hidden rounded-full">
                     <img
                       src="/joe-as-engineer.png"
-                      alt="Founder - Tech Journalist & Content Creator"
+                      alt="Founder - Tech Journalist, Documentation Engineer & Content Creator"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -93,16 +93,16 @@ const About: React.FC = () => {
                   <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet the Founder</h2>
                   <h3 className="text-xl text-blue-600 font-semibold mb-4">Tech Journalist & Content Creator</h3>
                   <p className="text-gray-600 mb-6">
-                    With over a decade of experience covering the technology industry, our founder has been 
-                    documenting Seattle's transformation into a major AI hub. Previously a staff writer at 
-                    leading tech publications, they now focus exclusively on the artificial intelligence 
-                    ecosystem in the Pacific Northwest.
+                    With over a decade of experience as a technical communicator for Microsoft, Google,
+                    Amazon, and Grafana Labs, our founder has been working at the intersection of software,
+                    knowledge, and developer experience. He is currently working full-time as a content
+                    manager and journalist in the domain of enterprise software. 
                   </p>
                   <p className="text-gray-600 mb-6">
-                    Beyond journalism, they provide strategic content creation services to help AI 
-                    companies communicate their value and connect with their audiences. Their 
+                    Beyond journalism, he provides strategic content creation services to help AI 
+                    companies communicate their value and connect with their audiences. His 
                     work has been featured in major publications and has helped dozens of businesses 
-                    tell their stories effectively.
+                    and executives tell their stories effectively.
                   </p>
                   
                   <div className="flex items-center space-x-4">
@@ -156,7 +156,7 @@ const About: React.FC = () => {
               Join Our Community
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Whether you're an AI professional, business owner, or simply curious about artificial 
+              Whether you're an AI professional, company executive, or simply curious about artificial 
               intelligence, we'd love to connect with you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
