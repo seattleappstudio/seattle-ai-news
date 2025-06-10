@@ -69,10 +69,10 @@ const Home: React.FC = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight text-white drop-shadow-lg">
-                Connect. Create. Consult.
+                AI Content Products & Media
               </h1>
               <p className="text-2xl md:text-3xl text-blue-100 font-medium drop-shadow-md">
-                Your AI Partner in Seattle
+                Your AI Content Partner in Seattle & Beyond
               </p>
               <p className="text-lg md:text-xl text-blue-200 max-w-3xl mx-auto leading-relaxed">
                 Connecting the Pacific Northwest's artificial intelligence ecosystem through 
@@ -111,10 +111,10 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Everything You Need to Navigate Seattle's AI Ecosystem
+              Helping You to Navigate Seattle's AI Ecosystem
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              From discovering local AI talent to creating compelling content and building community connections.
+              From discovering local AI companies to creating compelling content and building community connections.
             </p>
           </div>
 
@@ -147,7 +147,7 @@ const Home: React.FC = () => {
               <h3 className="text-3xl font-bold text-gray-900 mb-6">Seattle Content Studio</h3>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">
                 Professional content creation services including blog writing, whitepapers, 
-                case studies, and thought leadership content.
+                case studies, and technical documentation.
               </p>
               <div className="text-cyan-600 font-bold text-lg group-hover:text-cyan-700 flex items-center">
                 Learn More
@@ -228,8 +228,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Newsletter Signup */}
+      {/*
       <section className="py-24 bg-gradient-to-br from-blue-600 to-cyan-600">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white rounded-3xl p-12 md:p-16 shadow-2xl">
@@ -246,6 +245,8 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      */}
+      
     </div>
   );
 };
