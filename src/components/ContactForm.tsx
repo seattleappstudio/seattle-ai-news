@@ -1,20 +1,12 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 interface ContactFormProps {
   service?: string;
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({ service }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    service: service || '',
-    message: ''
-  });
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const serviceOptions = [
     { value: '', label: 'Select a service...' },
@@ -25,37 +17,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ service }) => {
     { value: 'media', label: 'Media Inquiry' },
     { value: 'other', label: 'Other' }
   ];
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Here you would integrate with your form handling service
-    // For demo purposes, we'll simulate a successful submission
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      console.log('Form submitted:', formData);
-      setIsSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        service: service || '',
-        message: ''
-      });
-    } catch (error) {
-      console.error('Form submission error:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   if (isSubmitted) {
     return (
@@ -76,7 +37,15 @@ const ContactForm: React.FC<ContactFormProps> = ({ service }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto">
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      className="space-y-6 max-w-2xl mx-auto"
+      onSubmit={() => setIsSubmitted(true)}
+    >
+      <input type="hidden" name="form-name" value="contact" />
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -86,8 +55,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ service }) => {
             type="text"
             id="name"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
             required
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             placeholder="Your full name"
@@ -102,8 +69,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ service }) => {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
             required
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             placeholder="your@email.com"
@@ -120,8 +85,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ service }) => {
             type="text"
             id="company"
             name="company"
-            value={formData.company}
-            onChange={handleChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             placeholder="Your company name"
           />
@@ -134,8 +97,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ service }) => {
           <select
             id="service"
             name="service"
-            value={formData.service}
-            onChange={handleChange}
             required
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           >
@@ -156,8 +117,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ service }) => {
           id="message"
           name="message"
           rows={6}
-          value={formData.message}
-          onChange={handleChange}
           required
           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical"
           placeholder="Tell us about your project, goals, timeline, or any questions you have..."
@@ -167,24 +126,9 @@ const ContactForm: React.FC<ContactFormProps> = ({ service }) => {
       <div className="text-center">
         <button
           type="submit"
-          disabled={isSubmitting}
-          className={`inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white transition-colors ${
-            isSubmitting
-              ? 'bg-gray-400 cursor-not-allowed'
-              : 'bg-blue-600 hover:bg-blue-700'
-          }`}
+          className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors"
         >
-          {isSubmitting ? (
-            <>
-              <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-              Sending...
-            </>
-          ) : (
-            <>
-              <Send className="w-4 h-4 mr-2" />
-              Send Message
-            </>
-          )}
+          Send Message
         </button>
       </div>
     </form>
