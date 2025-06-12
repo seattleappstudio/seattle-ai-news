@@ -7,7 +7,7 @@ const ContentStudio: React.FC = () => {
     {
       icon: FileText,
       title: "Blog & Newsletter Writing",
-      description: "Engaging, SEO-optimized content that positions your company as a thought leader in AI and technology.",
+      description: "Engaging, high-impact content that positions your company as a thought leader in AI and technology.",
       features: ["Weekly/monthly blog posts", "Newsletter content", "SEO optimization", "Industry insights"]
     },
     {
@@ -19,7 +19,7 @@ const ContentStudio: React.FC = () => {
     {
       icon: PenTool,
       title: "Technical Documentation",
-      description: "Clear, structured, and developer-friendly content that empowers users and showcases your platform's capabilities.",
+      description: "Clear, structured, and developer-friendly content that empowers users and showcases your product's capabilities.",
       features: ["API reference documentation", "Developer tutorials & walkthroughs", "How-to guides & quickstarts", "Technical editing"]
     },
     {
@@ -35,18 +35,18 @@ const ContentStudio: React.FC = () => {
       title: "Developer Portal",
       type: "Developer Docs",
       description: "Led technical writing of developer-focused documentation for a leading IT observability company.",
-      results: "Overhauled and integrated docs into a new developer portal."
+      results: "Improved developer onboarding experience for plugin and app creation."
     },
     {
       title: "Tech Magazine Coverage",
       type: "Journalism",
       description: "Covered a portfolio of major companies for a leading publisher of enterprise software news.",
-      results: "Boosted media awareness, created brand familiarity in marketplace."
+      results: "Boosted clients' brand familiarity in marketplace."
     },
     {
       title: "Tech Blog Content",
       type: "Blogs",
-      description: "Wrote initial slate of blog posts for an innovative product of a major software company.",
+      description: "Wrote slate of blog posts for an innovative product of a major software company.",
       results: "Seeded a v1.0 product with content and set tone and style for ongoing publication."
     }
   ];

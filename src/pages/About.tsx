@@ -41,8 +41,7 @@ const About: React.FC = () => {
               <Brain className="w-16 h-16 mx-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
               <p className="text-xl text-blue-100">
-                To strengthen the Pacific Northwest's AI ecosystem by connecting professionals, 
-                sharing knowledge, and helping businesses practically implement artificial intelligence solutions.
+                  To strengthen the Pacific Northwest's AI ecosystem through editorial services that help tech companies tell their stories, connect with their audience, and achieve real business results.
               </p>
             </div>
           </div>
@@ -90,26 +89,20 @@ const About: React.FC = () => {
                   </div>
                 </div>
                 <div className="md:col-span-2">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet the Founder</h2>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet the Founder and Editor-in-Chief</h2>
                   <h3 className="text-xl text-blue-600 font-semibold mb-4">Tech Journalist & Content Creator</h3>
                   <p className="text-gray-600 mb-6">
-                    With over a decade of experience as a technical communicator for Microsoft, Google,
-                    Amazon, and Grafana Labs, our founder has been working at the intersection of software,
-                    knowledge, and developer experience. He is currently working full-time as a content
-                    manager and journalist in the domain of enterprise software. 
-                  </p>
-                  <p className="text-gray-600 mb-6">
-                    Beyond journalism, he provides strategic content creation services to help AI 
-                    companies communicate their value and connect with their audiences. His 
-                    work has been featured in major publications and has helped dozens of businesses 
-                    and executives tell their stories effectively.
+                    With over a decade of experience as a technical communications professional for Microsoft, Google, and Amazon, our founder has been working at the intersection of software,
+                    knowledge, and developer experience. Now as the founder of Seattle AI News and
+                    Seattle Content Studio, he provides strategic content creation services to help 
+                    companies communicate their value and connect with their audiences.
                   </p>
                   
                   <div className="flex items-center space-x-4">
-                    <a href="#" className="text-blue-600 hover:text-blue-700 transition-colors">
+                    <a href="https://www.linkedin.com/company/seattle-ai-news/" className="text-blue-600 hover:text-blue-700 transition-colors">
                       <Linkedin className="w-5 h-5" />
                     </a>
-                    <a href="#" className="text-blue-600 hover:text-blue-700 transition-colors">
+                    <a href="https://x.com/seattleainews/" className="text-blue-600 hover:text-blue-700 transition-colors">
                       <Twitter className="w-5 h-5" />
                     </a>
                     <a href="mailto:seattleainews@gmail.com" className="text-blue-600 hover:text-blue-700 transition-colors">
@@ -144,7 +137,7 @@ const About: React.FC = () => {
             <p className="text-gray-600 text-center">
               Operating from Seattle allows us to stay connected to the pulse of the region's AI 
               development, from the innovation labs of major tech companies to the emerging startups 
-              in South Lake Union and beyond.
+              in South Lake Union, Bellevue, and beyond.
             </p>
           </div>
         </section>

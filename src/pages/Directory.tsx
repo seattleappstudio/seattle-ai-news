@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Search, Building2, Users, Wrench, TrendingUp, GraduationCap, ExternalLink } from 'lucide-react';
+import { Search, Building2, Users, Wrench, TrendingUp, GraduationCap, UserCheck, ExternalLink } from 'lucide-react';
 
 interface DirectoryListing {
   id: number;
   name: string;
   description: string;
-  category: 'startup' | 'consultant' | 'tool' | 'investor' | 'research';
+  category: 'startup' | 'consultant' | 'tool' | 'investor' | 'research' | 'group';
   website: string;
   location: string;
 }
@@ -224,6 +224,109 @@ const Directory: React.FC = () => {
       website: "https://www.wellsaidlabs.com/",
       location: "Seattle, WA"
     },
+    {
+      id: 27,
+      name: "Flying Fish Partners",
+      description: "Focuses specifically on AI and ML startups in the Pacific Northwest.",
+      category: "investor",
+      website: "https://www.flyingfish.vc/about-us",
+      location: "Seattle, WA"
+    },
+    {
+      id: 28,
+      name: "Madrona Venture Group",
+      description: "Invests primarily in AI and automation.",
+      category: "investor",
+      website: "https://www.madrona.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 29,
+      name: "M12 (Microsoft’s VC arm)",
+      description: "Invests with a tight relationiship with the Copilot ecosystem.",
+      category: "investor",
+      website: "https://m12.vc/",
+      location: "Seattle, WA"
+    },
+        {
+      id: 30,
+      name: "Seven Peaks Ventures",
+      description: "Invests in AI, no-code, and automation..",
+      category: "investor",
+      website: "https://sevenpeaksventures.com/",
+      location: "Bend, OR"
+    },
+    {
+      id: 31,
+      name: "Unlock Venture Partners",
+      description: "Offers an early-stage fund with Seattle office; active in AI startup seed rounds.",
+      category: "investor",
+      website: "https://www.unlockvp.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 32,
+      name: "Voyager Capital",
+      description: "Invests in cloud infrastructure and automation startups in the PNW.",
+      category: "investor",
+      website: "https://www.voyagercapital.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 33,
+      name: "FUSE VC",
+      description: "Invests in B2B SaaS, data infrastructure, and AI platforms..",
+      category: "investor",
+      website: "https://fuse.vc/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 34,
+      name: "Pioneer Square Labs",
+      description: "Offers a startup studio and fund with AI and no-code incubations.",
+      category: "investor",
+      website: "https://www.pioneersquarelabs.com/",
+      location: "Seattle, WA"
+    },
+    {
+      id: 35,
+      name: "AI House",
+      description: "Offers an AI incubator hub launched as a public-private joint venture.",
+      category: "research",
+      website: "https://www.ai2incubator.com/ai-house",
+      location: "Seattle, WA"
+    },    {
+      id: 36,
+      name: "Allen Institute for AI (AI2)",
+      description: "Focused on large-scale open models, data, robotics, and conservation.",
+      category: "research",
+      website: "https://allenai.org/",
+      location: "Seattle, WA"
+    },    
+    {
+      id: 37,
+      name: "University of Washington NLP Group",
+      description: "Offers a world-renowned team of AI researchers.",
+      category: "research",
+      website: "https://nlp.washington.edu/",
+      location: "Seattle, WA"
+    },    
+    {
+      id: 38,
+      name: "Microsoft Research AI",
+      description: "Focused on NLP, Copilot, and generative AI.",
+      category: "research",
+      website: "https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/",
+      location: "Seattle, WA"
+    },
+        {
+      id: 39,
+      name: "Seattle AI Society",
+      description: "Brings together AI builders, founders, and enthusiasts.",
+      category: "group",
+      website: "https://www.seattleaisociety.org/",
+      location: "Seattle, WA"
+    },
   ];
 
   const categories = [
@@ -233,6 +336,7 @@ const Directory: React.FC = () => {
     { id: 'tool', name: 'Tools & Platforms', icon: Wrench },
     { id: 'investor', name: 'Investors', icon: TrendingUp },
     { id: 'research', name: 'Research', icon: GraduationCap },
+    { id: 'group', name: 'Groups', icon: UserCheck },
   ];
 
   const filteredListings = listings.filter(listing => {
@@ -254,6 +358,7 @@ const Directory: React.FC = () => {
       tool: 'bg-purple-100 text-purple-800',
       investor: 'bg-yellow-100 text-yellow-800',
       research: 'bg-red-100 text-red-800',
+      group: 'bg-orange-100 text-orange-800',
     };
     return colors[category as keyof typeof colors] || 'bg-gray-100 text-gray-800';
   };
@@ -267,8 +372,7 @@ const Directory: React.FC = () => {
             Seattle AI Directory
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover and connect with AI companies, consultants, tools, investors, and research organizations 
-            throughout the Pacific Northwest region.
+            Discover and connect with AI companies, consultants, tools, investors, research organizations, and community groups throughout the Silicon Forest.
           </p>
         </div>
 

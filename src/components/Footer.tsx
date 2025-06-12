@@ -63,13 +63,13 @@ const Footer: React.FC = () => {
             
             {/* Social Media */}
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://x.com/seattleainews" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/seattle-ai-news/" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/seattleappstudio/seattle-ai-news/" className="text-gray-400 hover:text-white transition-colors">
                 <Github className="w-5 h-5" />
               </a>
               <a href="mailto:seattleainews@gmail.com" className="text-gray-400 hover:text-white transition-colors">
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; 2025 Seattle AI News. All rights reserved.</p>
+          <p>&copy; 2025 Joseph Perez DBA <a href="https://seattleainews.substack.com/">Seattle AI News</a>. All rights reserved.</p>
         </div>
       </div>
     </footer>
